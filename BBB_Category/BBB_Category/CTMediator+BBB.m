@@ -19,10 +19,8 @@
     return [self performTarget:@"BBB" action:@"viewController" params:params shouldCacheTarget:NO];
 }
 
-- (UIViewController *)A_aViewControllerWithParamBlock:(void(^)())paramBlock {
-    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
-    params[@"paramBlock"] = paramBlock;
-    return [self performTarget:@"BBB" action:@"viewController" params:params shouldCacheTarget:NO];
+- (UIViewController *)A_aViewControllerWithParamDic:(NSDictionary *)paramDic {
+    return [self performTarget:@"BBB" action:@"viewController" params:paramDic shouldCacheTarget:NO];
 }
 
 @end

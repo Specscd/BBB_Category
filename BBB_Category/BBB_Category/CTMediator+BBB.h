@@ -10,7 +10,7 @@
 
 @interface CTMediator (BBB)
 
-- (UIViewController *)A_aViewControllerWithParamBlock:(void(^)())paramBlock;
+- (UIViewController *)A_aViewControllerWithParamDic:(NSDictionary *)paramDic;
 - (UIViewController *)A_aViewControllerWithCallback:(void(^)(NSString *result))callback;
 
 @end
