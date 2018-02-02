@@ -16,13 +16,13 @@
      */
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
     params[@"callback"] = callback;
-    return [self performTarget:@"A" action:@"viewController" params:params shouldCacheTarget:NO];
+    return [self performTarget:@"BBB" action:@"viewController" params:params shouldCacheTarget:NO];
 }
 
 - (UIViewController *)A_aViewControllerWithParamBlock:(void(^)())paramBlock {
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
     params[@"paramBlock"] = paramBlock;
-    return [self performTarget:@"A" action:@"viewController" params:params shouldCacheTarget:NO];
+    return [self performTarget:@"BBB" action:@"viewController" params:params shouldCacheTarget:NO];
 }
 
 @end
